@@ -1,5 +1,108 @@
 @media (min-width: 200px) {
 
+   /* HEADER */
+   header {
+      background-image: url("/img/bg-header.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 45vh;
+      @include flexBoxColumn;
+
+      > section {
+         @include flexBoxColumn;
+         @include alignComponents(center,center);
+         row-gap: 3vh;
+         text-align: center;
+         height: 100%;
+
+         > h1, h3 {
+            text-transform: uppercase;
+            font-weight: 300;
+            color: whitesmoke;
+         }
+
+         > h1 {
+            font-size: 22px;
+         }
+
+         h3 {
+            font-size: 16px;
+         }
+      }
+
+      a:nth-child(3) {
+         width: fit-content;
+         background-color: $defaultOrange;
+         color: whitesmoke;
+         padding: 10px 30px;
+         text-transform: uppercase;
+         font-weight: 600;
+      }
+   }
+
+   nav {
+      padding-top: 3%;
+      padding-bottom: 3%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: white;
+      position: relative;
+
+      > ul {
+         display: none;
+      }
+
+      h1 {
+         padding-left: 3%;
+      }
+   }
+
+   details {
+      padding-right: 3%;
+      width: 95%;
+      text-align: right;
+      position: absolute;
+      
+      > ul {
+         list-style-type: none;
+         background-color: white;
+         position: absolute;
+         width: 100%;
+         @include flexBoxColumn;
+         align-items: center;
+      }
+
+      li {
+         display: flex;
+         width: 99%;
+      }
+
+      a {
+         border: 2px solid white;
+         text-align: center;
+         padding: 1vh;
+         height: 100%;
+         width: 100%;
+         text-transform: uppercase;
+      }
+
+      a:hover {
+         color: whitesmoke;
+         background-color: lightblue;
+         border-color: deepskyblue;
+      }
+   }
+
+   summary {
+      padding: 1%;
+      font-size: 20px;
+      color: $defaultOrange;
+      border: 0.5px solid lightgray;
+   }
+
+   /* PORTFOLIO */
    .portfolio {
       padding-top: 15%;
       @include flexBoxColumn;

@@ -100,6 +100,75 @@
       color: $defaultOrange;
    }
 
+   /* FEATURES */
+   .features {
+      padding-top: 15vh;
+      padding-bottom: 10vh;
+      @include flexBoxColumn;
+      row-gap: 10vh;
+
+      > article {
+         @include flexBoxColumn;
+         row-gap: 5vh;
+         align-items: center;
+         text-align: center; 
+      }
+
+      a {
+         span:first-child {
+            color: cornflowerblue;
+         }
+
+         span:last-child {
+            color: chartreuse;
+         }
+      }
+
+      > section {
+         @include flexBoxColumn;
+         align-items: center;
+         row-gap: 5vh;
+         a {
+            width: 20vh;
+            height: 20vh;
+            border-radius: 50%;
+            border: 1px solid $defaultOrange;
+            background-color: $defaultOrange;
+            display: flex;
+            @include alignComponents(center,center);
+            font-size: 44px;
+            transition: .4s;
+         }
+
+         i {
+            transition: .4s;
+         }
+
+         a:hover {
+            background-color: whitesmoke;
+            > i {
+               color: $defaultOrange;
+            }
+         }
+      }
+
+      p {
+         width: 90%;
+      }
+
+      aside {
+         @include flexBoxColumn;
+         text-align: center;
+         align-items: center;
+         row-gap: 3vh;
+         > p {
+            width: 80%;
+         }
+      }
+      
+   }
+
+   /* TEAM */
    .team {
       @include flexBoxColumn;
       row-gap: 10vh;

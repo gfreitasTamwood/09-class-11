@@ -100,6 +100,14 @@
       color: $defaultOrange;
    }
 
+   address {
+      color: whitesmoke;
+   }
+
+   textarea {
+      height: 20vh;
+   }
+
    /* FEATURES */
    .features {
       padding-top: 15vh;
@@ -246,5 +254,62 @@
       p {
          text-align: center;
       }
+   }
+
+   /* CONTACT */
+   .contact {
+      padding-bottom: 10vh;
+      @include flexBoxColumn;
+      @include alignComponents(center,center);
+      row-gap: 5vh;
+      padding-top: 10vh;
+      
+      > article {
+         text-align: center;
+         width: 90%;
+         > p, h2 {
+            color: whitesmoke;
+         }
+      }
+
+      > section, article {
+         width: 95%;
+         @include flexBoxColumn;
+         row-gap: 3vh;
+
+         i {
+            color: $defaultOrange;
+         }
+      }
+
+      h3 {
+         color: whitesmoke;
+      }
+
+      ul {
+         @include flexBoxColumn;
+         row-gap: 2vh;
+      }
+
+      a {
+         color: $defaultOrange;
+      }
+
+      li {
+         display: flex;
+         column-gap: 2vh;
+      }
+
+      li:first-child {
+         > a {
+            color: whitesmoke;
+         }
+      }
+   }
+
+   [type="submit"] {
+      font-weight: 600;
+      width: 45%;
+      text-transform: uppercase;
    }
 }

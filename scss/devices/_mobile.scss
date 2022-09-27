@@ -100,6 +100,64 @@
       color: $defaultOrange;
    }
 
+   .team {
+      @include flexBoxColumn;
+      row-gap: 10vh;
+      align-items: center;
+      padding-top: 15vh;
+      padding-bottom: 15vh;
+      text-align: center;
+
+      > article {
+         @include flexBoxColumn;
+         align-items: center;
+         row-gap: 5vh;
+
+         > p {
+            width: 90%;
+         }
+      }
+
+      > section {
+         width: 90%;
+         @include flexBoxColumn;
+         row-gap: 15vh;
+      }
+
+      h2 {
+         text-transform: uppercase
+      }
+
+      figure {
+         @include flexBoxColumn;
+         row-gap: 5vh;
+      }
+
+      span {
+         background-color: white;
+         text-transform: uppercase;
+         color: $defaultOrange;
+         text-align: center;
+         font-weight: 700;
+         font-size: 24px;
+      }
+
+      small {
+         text-align: center;
+         color: dimgray;
+         text-transform: uppercase;
+      }
+
+      img {
+         width: 100%;
+      }
+
+      figcaption {
+         @include flexBoxColumn;
+         row-gap: 2vh;
+      }
+   }
+
    /* PORTFOLIO */
    .portfolio {
       padding-top: 15%;

@@ -1,4 +1,9 @@
-@mixin flexBoxColumn{
+@mixin flexBoxColumn {
    display: flex;
    flex-direction: column;
+}
+
+@mixin alignComponents ($alignItems,$justify) {
+   align-items: $alignItems;
+   justify-content: $justify;
 }

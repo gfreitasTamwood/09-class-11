@@ -1,3 +1,22 @@
 @media (min-width: 200px) {
-   
+
+   .portfolio {
+      padding-top: 15%;
+      @include flexBoxColumn;
+      row-gap: 10vh;
+
+      > article, figure {
+         @include flexBoxColumn;
+         @include alignComponents(center,center);
+         row-gap: 2vh;
+      }
+
+      img {
+         width: 98%;
+      }
+
+      p {
+         text-align: center;
+      }
+   }
 }

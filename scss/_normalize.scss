@@ -13,7 +13,7 @@ body {
    @include flexBoxColumn;
 }
 
-main > section:nth-child(even) {
+main > section:nth-child(odd) {
    background-color: $defaultSectionBg;
 }
 

@@ -1,0 +1,51 @@
+@media (min-width: 600px) {
+
+   .about {
+      padding-top: 5vh;
+      padding-bottom: 5vh;
+
+      > article {
+         row-gap: 2vh;
+      }
+
+      > section {
+         flex-direction: row;
+         column-gap: 5vh;
+
+         > aside, > ul {
+            width: 50%;
+         }
+
+         > aside {
+            row-gap: 1vh;
+         }
+      }
+
+      h2 {
+         font-size: 36px;
+         font-weight: 400;
+      }
+
+      ul {
+         row-gap: 2vh;
+      }
+
+      li {
+         row-gap: 1vh;
+      }
+
+      h3 {
+         font-size: 28px;
+         font-weight: 400;
+      }
+
+      h4 {
+         font-size: 18px;
+         text-transform: uppercase;
+      }
+
+      blockquote, h6 {
+         height: 0.5vh;
+      }
+   }
+}

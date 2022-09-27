@@ -176,6 +176,71 @@
       
    }
 
+   /* ABOUT */
+   .about {
+      @include flexBoxColumn;
+      align-items: center;
+      row-gap: 5vh;
+      padding-top: 10vh;
+      padding-bottom: 10vh;
+
+      > article, > section {
+         width: 90%;
+         @include flexBoxColumn;
+         row-gap: 5vh;
+      }
+
+      > article {
+         text-align: center;
+      }
+
+      > section {
+         > aside {
+            @include flexBoxColumn;
+            row-gap: 3vh;
+         }
+      }
+   }
+
+   .bars {
+      @include flexBoxColumn;
+      row-gap: 4vh;
+      width: 100%;
+
+      > li {
+         @include flexBoxColumn;
+         row-gap: 1vh;
+      }
+
+      > li:nth-child(3) {
+         h6 {
+            width: 80%;
+         }
+      }
+
+      > li:last-child {
+         h6 {
+            width: 90%;
+         }
+      }
+
+      aside {
+         display: flex;
+         justify-content: space-between;
+      }
+
+      blockquote, h6 {
+         width: 100%;
+         height: 1vh;
+         border-radius: 20px;
+         background-color: darkgray;
+      }
+
+      h6 {
+         background-color: $defaultOrange;
+      }
+   }
+
    /* TEAM */
    .team {
       @include flexBoxColumn;

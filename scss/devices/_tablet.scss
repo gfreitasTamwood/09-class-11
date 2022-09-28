@@ -5,6 +5,22 @@
       font-weight: 400;
    }
 
+   input {
+      height: 5vh;
+   }
+
+   [type="submit"] {
+      width: 70%;
+      padding: 7%;
+      transition: .4s;
+
+      &:hover {
+         background-color: whitesmoke;
+         color: $contactBg;
+         cursor: pointer;
+      }
+   }
+
    /* ABOUT */
    .about {
       padding-top: 5vh;
@@ -68,6 +84,42 @@
       img {
          height: 20vh;
          width: 30vh;
+      }
+   }
+
+   /* CONTACT */
+   .contact {
+
+      > article {
+         align-items: center;
+      }
+
+      > section {
+         width: 85%;
+         justify-content: space-between;
+         flex-direction: row;
+         > article {
+            width: 45%;
+            column-gap: 2vh;
+         }
+
+      }
+
+      p {
+         width: 80%;
+      }
+
+      h3 {
+         text-transform: uppercase;
+         font-size: 24px;
+         font-weight: 400;
+      }
+
+      form {
+         width: 45%;
+         > article {
+            row-gap: 1vh;
+         }
       }
    }
 }
